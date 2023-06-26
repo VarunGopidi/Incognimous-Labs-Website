@@ -1,8 +1,29 @@
+
+
+
+
+
+
 $ git clone git@github.com:incognimous-labs/incognimous_website.git
+{
+    if not working then install git and ssh as well
+    apt-get update
+    apt-get insatll git
+    ssh.keygen
+    ls .ssh
+    cd .ssh
+    cat <id_rsa>.pub
+    //copy the ssh code and add in github account in SSH keys
+}
 
 $ cd incognimous_website/
 
 $ npm install
+{
+    if not working then install npm
+    apt-get update
+    apt-get insatll npm
+}
 
 $ sudo chmod +x node_modules/.bin/react-scripts
 
