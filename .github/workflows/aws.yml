@@ -35,7 +35,7 @@ jobs:
 #         cache-dependency-path: subdir/package-lock.json
 
     - name: Build React App
-      run: node -v && npm -v && npm install && sudo npm run build
+      run: node -v && npm -v && npm install && sudo chmod +x node_modules/.bin/react-scripts && sudo npm run build
       
     - name: Deploy app build to S3 bucket
       run: aws s3 cp --recursive ./build/ s3://${{ env.BUCKET_NAME }}/
