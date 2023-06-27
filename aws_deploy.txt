@@ -22,4 +22,6 @@ $ npm install
 
 $ sudo chmod +x node_modules/.bin/react-scripts
 
-$ npm run start
+$ sudo npm run build
+
+$ serve -s build
