@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
 import logo from './logo.svg';
-import { Grid, Box, styled, Typography } from '@mui/material';
+import { Grid, Box, styled, Typography, Divider } from '@mui/material';
 import Footer from '../molecules/footer';
 import HomeSlider from '../molecules/homeSlider';
 import Navbar from '../molecules/navbar';
@@ -63,10 +63,10 @@ const Homepage: React.FC = () => {
           info='Welcome to incognimous labs, where we provide top-notch cybersecurity solutions to protect your business from cyber threats.,'
         /></Grid> */}
         <Grid item>
-        {elements[currentElement]}
+          {elements[currentElement]}
         </Grid>
         <Grid item> <PhotoGrid /></Grid>
-        <Grid item alignContent={'center'} py={10} md={4}>
+        <Grid item alignContent={'center'} py={10} md={4} px={60}>
           <Typography sx={{
             fontFamily: 'Roboto, sans-serif', fontWeight: '700',
             fontSize: '40px',
@@ -81,6 +81,111 @@ const Homepage: React.FC = () => {
             textAlign: 'center',
           }}>United by the team, concert on risk factors to reduce the sympotomus</Typography>
 
+        </Grid>
+
+        <Grid item px={30} py={3}>
+          <Grid container flexDirection={'row'} columnGap={9}>
+            <Grid item>
+              <Grid container rowGap={2} flexDirection={'column'} alignItems={'center'}>
+                <Grid item>
+                  <Typography sx={{
+                    fontFamily: 'Roboto, sans-serif', fontWeight: '600',
+                    fontSize: '40px',
+                    lineHeight: '40px',
+                    textAlign: 'center',
+                    color: '#01487E',
+                  }} >100+ </Typography>
+                </Grid>
+                <Grid item>
+                  <Typography sx={{
+                    fontFamily: 'Roboto, sans-serif', fontWeight: '400',
+                    fontSize: '16px',
+                    lineHeight: '18.75px',
+                    textAlign: 'center',
+                  }} >Training Sessions </Typography>
+                </Grid>
+              </Grid>
+            </Grid>
+            <Grid item>
+              <Divider sx={{ margin: '10px', backgroundColor: '#01487E', height: '100%', width: '1px' }} />
+            </Grid>
+
+            <Grid item>
+              <Grid container rowGap={2} flexDirection={'column'} alignItems={'center'}>
+                <Grid item>
+                  <Typography sx={{
+                    fontFamily: 'Roboto, sans-serif', fontWeight: '600',
+                    fontSize: '40px',
+                    lineHeight: '40px',
+                    textAlign: 'center',
+                    color: '#01487E',
+                  }} >10+ </Typography>
+                </Grid>
+                <Grid item>
+                  <Typography sx={{
+                    fontFamily: 'Roboto, sans-serif', fontWeight: '400',
+                    fontSize: '16px',
+                    lineHeight: '18.75px',
+                    textAlign: 'center',
+                  }} >Team Members </Typography>
+                </Grid>
+              </Grid>
+            </Grid>
+            <Grid item>
+              <Divider sx={{ margin: '10px', backgroundColor: '#01487E', height: '100%', width: '1px' }} />
+            </Grid>
+
+            <Grid item>
+              <Grid container rowGap={2} flexDirection={'column'} alignItems={'center'}>
+                <Grid item>
+                  <Typography sx={{
+                    fontFamily: 'Roboto, sans-serif', fontWeight: '600',
+                    fontSize: '40px',
+                    lineHeight: '40px',
+                    textAlign: 'center',
+                    color: '#01487E',
+                  }} >3+ </Typography>
+                </Grid>
+                <Grid item>
+                  <Typography sx={{
+                    fontFamily: 'Roboto, sans-serif', fontWeight: '400',
+                    fontSize: '16px',
+                    lineHeight: '18.75px',
+                    textAlign: 'center',
+                  }} >Years of Experience</Typography>
+                </Grid>
+              </Grid>
+            </Grid>
+            <Grid item>
+              <Divider sx={{ margin: '10px', backgroundColor: '#01487E', height: '100%', width: '1px' }} />
+            </Grid>
+
+            <Grid item>
+              <Grid container rowGap={2} flexDirection={'column'} alignItems={'center'}>
+                <Grid item>
+                  <Typography sx={{
+                    fontFamily: 'Roboto, sans-serif', fontWeight: '600',
+                    fontSize: '40px',
+                    lineHeight: '40px',
+                    textAlign: 'center',
+                    color: '#01487E',
+                  }} >15+ </Typography>
+                </Grid>
+                <Grid item>
+                  <Typography sx={{
+                    fontFamily: 'Roboto, sans-serif', fontWeight: '400',
+                    fontSize: '16px',
+                    lineHeight: '18.75px',
+                    textAlign: 'center',
+                  }} >Project Completions </Typography>
+                </Grid>
+              </Grid>
+            </Grid>
+            
+          </Grid>
+        </Grid>
+        <Grid item>
+          
         </Grid>
         <Grid item>
           <RelativeBox>

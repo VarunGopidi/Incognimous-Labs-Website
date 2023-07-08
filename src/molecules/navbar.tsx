@@ -89,6 +89,10 @@ const Navbar: React.FC = () => {
         history('/services');
     };
 
+    const handleProcess = () => {
+        history('/process');
+    };
+
     const handleContact = () => {
         history('/contactus');
     };
@@ -125,6 +129,8 @@ const Navbar: React.FC = () => {
                     <Grid container alignItems={"center"} columnGap={5}>
                         <Grid item onClick={handleServices}>
                             <Typography style={styles.tabs}>Services</Typography></Grid>
+                            <Grid item onClick={handleProcess}>
+                            <Typography style={styles.tabs}>Processes</Typography></Grid>
                         {/* <Grid item><Typography style={styles.tabs} >Work</Typography></Grid>
                         <Grid item><Typography style={styles.tabs} >Process</Typography></Grid> */}
                         <Grid item><Button text='CONTACT US' backgroundColor="#FFFFFF" onClick={handleContact}></Button></Grid>

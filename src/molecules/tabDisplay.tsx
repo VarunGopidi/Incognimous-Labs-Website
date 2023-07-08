@@ -66,7 +66,7 @@ const TabDisplay = ({ image, heading, info }: TabDisplayProps) => {
             <Grid item xs={12} md={'auto'} style={{ margin: 0 , padding: '0 0 0 160px'}}>
                 <img src={image} />
             </Grid>
-            <Grid item xs={12} md={6} px={0} style={{ margin: '10px' , padding: '0 112px 0 136px' }}>
+            <Grid item xs={12} md={6} px={0} style={{ margin: '10px' , padding: '0 20px 0 136px' }}>
                 <Typography style={styles.heading}>{heading}</Typography>
                 <Typography style={styles.info}>{info}</Typography>
             </Grid>

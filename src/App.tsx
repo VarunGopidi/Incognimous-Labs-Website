@@ -11,12 +11,14 @@ import ServicesPage from './organisms/servicesPage';
 import Homepage from './organisms/home';
 import ContactUsPage from './organisms/contactUsPage';
 import ErrorPage from './organisms/errorPage';
+import ProcessPage from './organisms/processPage';
 function App() {
   return (
     <Router>
       <Routes>
         <Route path="/" element={<Homepage />} />
         <Route path="/services" element={<ServicesPage />} />
+        <Route path="/process" element={<ProcessPage />} />
         <Route path="/contactus" element={<ContactUsPage />} />
         <Route element={<ErrorPage heading={'OOPS! PAGE NOT FOUND'} info={'Sorry, the page you are looking for doesn’t exist.'} />} />
       </Routes>

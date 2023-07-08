@@ -26,7 +26,7 @@ const ContactUsPage: React.FC = () => {
         <Grid item><Navbar /></Grid>
         <Grid item> <TabDisplay image={rafiki}
           heading='Let’s create the next together'
-          info='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,'
+          info='Contact us today to learn more about our services and how we can help protect your business from cyber threats.'
         /></Grid>
         <Grid item >
           <Grid container px={15} py={6} flexDirection={"column"} >
